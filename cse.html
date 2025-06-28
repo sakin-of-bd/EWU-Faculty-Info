@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Department of CSE</title>
+  <link rel="stylesheet" href="cse_style.css" />
+</head>
+<body>
+
+  <h1 class="cse_page_title">Welcome to Department of CSE</h1>
+
+  <h2>Add a Faculty</h2>
+  <form id="facultyForm">
+    <label for="facultyName">Faculty Name:</label>
+    <input type="text" id="facultyName" required />
+
+    <label for="roomNumber">Room Number:</label>
+    <input type="text" id="roomNumber" required />
+
+    <label for="officeHourPhoto">Office Hour Photo:</label>
+    <input type="file" id="officeHourPhoto" accept="image/*" />
+
+    <button type="submit">Add Faculty</button>
+  </form>
+
+  <h2>Faculty List</h2>
+  <div id="facultyList"></div>
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBaNWnC7FRwP3yX-9FLzodsdWBzMn0be2Y",
+    authDomain: "ewu-faculty-directory.firebaseapp.com",
+    projectId: "ewu-faculty-directory",
+    storageBucket: "ewu-faculty-directory.firebasestorage.app",
+    messagingSenderId: "257535555596",
+    appId: "1:257535555596:web:dc86bf80d35440db869629",
+    measurementId: "G-4W10Z7HHZ4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+  <script src="cse_faculty.js"></script>
+</body>
+</html>

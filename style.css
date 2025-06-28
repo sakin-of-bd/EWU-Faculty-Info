@@ -1,0 +1,31 @@
+body{
+   background-color: rgb(219, 219, 226);
+}
+.Uni_Title{
+    background-color: rgb(3, 6, 199);
+    text-align: center;
+    color: aliceblue;
+}
+.Department{
+    text-align: center;
+    text-decoration: underline;
+}
+#depts {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#depts:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
